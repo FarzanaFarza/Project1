@@ -1,0 +1,210 @@
+section#home	
+	Section.wrapper
+		header
+		section.top
+			nav.left
+				Img
+				h5
+			nav.middle
+				p
+			nav.right
+				ul
+				li*6
+		Section.middle
+			h1
+		section.bottom
+			ul
+			li*10
+section#spotlight
+h3	
+p
+ul>li*2>button	
+		Section.center
+			h3
+			p
+section#about
+		h3
+ul	
+li
+ 	Img
+	p
+	button
+	li
+ 	Img
+	p
+	button
+	li
+ 	Img
+	p
+	button
+
+
+#spotlight {
+   #spotlight {
+   padding: 140px 0;
+   text-align: center;
+   width: 65%;
+   margin: 0 auto;
+   color: white;
+}
+#spotlight h1 {
+   font-size: 25px;
+   text-transform: capitalize;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   margin-top: 200px;
+}
+#spotlight div {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   z-index: -1;
+}
+#spotlight div.background-video video {
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+#spotlight button {
+   background-color: transparent;
+   border: 1px solid white;
+
+}
+#spotlight h1 {
+   font-size: 25px;
+   text-transform: capitalize;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   margin-top: 200px;
+}
+#spotlight div {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   z-index: -1;
+}
+#spotlight div.background-video video {
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+#spotlight button {
+   background-color: transparent;
+   border: 1px solid white;
+
+
+
+
+
+
+
+footer
+	Section.wrapper
+		div.item
+			h1>a>img
+			P
+		div.item2
+h2	
+div.item3
+	ul> li*6 > a
+#home { 
+
+}
+
+#home .wrapper { 
+
+}
+
+#home .wrapper header { 
+
+}
+
+#home .wrapper header .top { 
+
+}
+
+#home .wrapper header .top .left { 
+
+}
+
+#home .wrapper header .top .left img { 
+
+}
+
+#home .wrapper header .top .left h5 { 
+
+}
+
+#home .wrapper header .top .middle { 
+
+}
+
+#home .wrapper header .top .middle p { 
+
+}
+
+#home .wrapper header .top .right { 
+
+}
+
+#home .wrapper header .top .right ul { 
+
+}
+
+#home .wrapper header .top .right ul li { 
+
+}
+
+#home .wrapper header .middle { 
+
+}
+
+#home .wrapper header .middle h1 { 
+
+}
+
+#home .wrapper header .bottom { 
+
+}
+
+#home .wrapper header .bottom ul { 
+
+}
+
+#home .wrapper header .bottom ul li { 
+
+}
+
+#home .wrapper #spotlight { 
+
+}
+
+#home .wrapper #spotlight video { 
+
+}
+
+#home .wrapper #spotlight video source { 
+
+}
+
+#home .wrapper #spotlight h3 { 
+
+}
+
+#home .wrapper #spotlight p { 
+
+}
