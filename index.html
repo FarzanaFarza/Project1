@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swarovski</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <section id="home">
         <section class="wrapper">
-            <header>
-                <section class="wrapper">
+            <header id="navbar">
                     <section class="top">
                         <nav class="left">
-                            <img src="Images/internet.png" alt="Images" />
-                            <h5>India | en</h5>
-                            <img src="Images/location.png" alt="Images" />
-                            <h5>Stores</h5>
+                                <a href=""><img src="Images/internet.png" alt="Images" /></a>
+                                <a href="">India | en</a>
+                                <a href=""><img src="Images/location.png" alt="Images" /></a>
+                                <a href="">stores</a>
                         </nav>
                         <nav class="middle">
-                            <p>Free standard shipping over: INR 7000</p>
+                                <p>Free standard shipping over: INR 7000</p>
                             </nav>
                             <nav class="right">
-                            <h5>Swarovski Club</h5>
+                                <a href style="
+                                    text-decoration: none;
+                                    color: black;"
+                                >Swarovski Club</a>
                         </nav>
                     </section>
                     <section class="middle">
-                        <h1>SWAROVSKI</h1>
+                        <h1><a href="">SWAROVSKI</a></h1>
                         <input type="text" placeholder="search">
                         <ul>
                             <li><img src="Images/user.png" alt=""></li>
@@ -35,18 +38,21 @@
                         </ul>
                     </section>
                     <section class="bottom">
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="fa fa-bars"></i>
+                        </label>
                         <ul>
-                            <li>New in</li>
-                            <li>Jewelry</li>
-                            <li>Watches</li>
-                            <li>Accessories</li>
-                            <li>Decorations</li>
-                            <li>Gifts</li>
-                            <li>World of Swarovski</li>
-                            <li>Outlet</li>
+                            <li><a class ="active" href="">New in</a></li>
+                            <li><a href="">Jewelry</a></li>
+                            <li><a href="">Watches</a></li>
+                            <li><a href="">Accessories</a></li>
+                            <li><a href="">Decorations</a></li>
+                            <li><a href="">Gifts</a></li>
+                            <li><a href="">World of swarovski</a></li>
+                            <li><a href="">Outlet</a></li>
                         </ul>
                     </section>
-                </section>
             </header> 
             <section id="spotlight">
                 <section class="wrapper">
@@ -57,41 +63,53 @@
                     <p>Showcasing our ever-evolving savoir-faire</p>
                     <button>Shop Now</button>
                 </section>
-            </section> 
+            </section>
             <section id="center">
-                    <h1>Ignite Your Dreams</h1>
-                    <p>Since 1895, founder Daniel Swarovskis passion for innovation and design, and mastery of crystal cutting has defined Swarovski as<br> the leading jewelry and accessories brand.</p>
+                <h1>Ignite Your Dreams</h1>
+                <p>Since 1895, founder Daniel Swarovskis passion for innovation and design, and mastery of crystal cutting has defined Swarovski as<br> the leading jewelry and accessories brand.</p>
             </section>
             <section id="about">
                 <section class="wrapper">
-                    <h1>Heritage Meets Innovations</h1>
-                    <ul>
-                        <li class="one">
-                            <img src="Images/jpg (2).avif" alt="">
-                            <h3>Radiant Necklace</h3>
-                            <p>An accumulation of cuts in a palette of bright <br> whites and marine blues delivers a radiant<br> refresh, while silhouettes enrich round-the-clock<br> ensembles with subtle elegance. </p>
-                            <h4>Shop Bracelets</h4>
-                        </li>
-                        <li class="two">
-                            <img src="Images/jpg.avif" alt="">
-                            <h3>Chic Bracelets</h3>
-                            <p>An accumulation of cuts in a palette of bright <br> whites and marine blues delivers a radiant<br> refresh, while silhouettes enrich round-the-clock<br> ensembles with subtle elegance. </p>
-                            <h4>Shop Bracelets</h4>
-                        </li>
-                        <li class="three">
-                            <img src="Images/jpg (1).avif" alt="">
-                            <h3>Bold Earrings</h3>
-                            <p>Full-cut facets in high-octane hues reinterpret<br> crystals with contemporary drama. A striking display <br>of Swarovski’s mastery of light, statement<br> earrings inspire you to shine your brightest.</p>
-                            <h4>Shop Earrings</h4>
-                        </li>
-                    </ul>
+                    <div class="content">
+                        <div class="top">
+                            <h1>Heritage Meets Innovations</h1>
+                        </div>
+                        <div class="bottom">
+                            <div class="left">
+                                <div class="image">
+                                    <img src="Images/jpg (2).avif" alt="Images" />
+                                </div>
+                                <h3>Radiant Necklace</h3>
+                                <p>An accumulation of cuts in a palette of bright <br> whites and marine blues delivers a radiant<br> refresh, while silhouettes enrich round-the-clock<br> ensembles with subtle elegance. </p>
+                                <h4>Shop Necklace</h4>
+                            </div>
+                            <div class="middle">
+                                <div class="image1">
+                                    <img src="Images/jpg.avif" alt="Images" />
+                                </div>
+                                <h3>Chic Bracelet</h3>
+                                <p>An accumulation of cuts in a palette of bright <br> whites and marine blues delivers a radiant<br> refresh, while silhouettes enrich round-the-clock<br> ensembles with subtle elegance. </p>
+                                <h4>Shop Bracelet</h4>
+                            </div>
+                            <div class="right">
+                                <div class="image2">
+                                    <img src="Images/jpg (1).avif" alt="Images" />
+                                </div>
+                                <h3>Bold Earrings</h3>
+                                <p>An accumulation of cuts in a palette of bright <br> whites and marine blues delivers a radiant<br> refresh, while silhouettes enrich round-the-clock<br> ensembles with subtle elegance. </p>
+                                <h4>Shop Earrings</h4>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <hr> <!-- This will create a horizontal line -->
                 <footer>
                     <section class="wrapper">
                         <div class="footercontainer">
-                            <p>Copyright © 2024 Swarovski India.<br> All rights reserved.<br>
-                            SWAROVSKI and the SWAN logo are registered<br> and trademarks of Swarovski AG.</p>
+                            <div class="left">
+                                <p>Copyright © 2024 Swarovski India.<br> All rights reserved.<br>
+                                SWAROVSKI and the SWAN logo are registered<br> and trademarks of Swarovski AG.</p>
+                             </div>
                             <div class="right">
                                 <div class="icon1">
                                     <img src="Images/facebook.png" alt="">
@@ -116,6 +134,7 @@
                     </section>
                 </footer>
             </section> 
+        </section>
         </section>
     </section>
 </body>
