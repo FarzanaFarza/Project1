@@ -107,15 +107,16 @@ a a.active,a:hover {
 }
 .checkbtn{
     font-size: 30px;
+    color: #000;
     float: right;
     line-height: 80px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
-}
-#check{
+  }
+  #check{
     display: none;
-}
+  }
 #home .wrapper #navbar .bottom ul{
     display: flex;
     list-style: none; 
@@ -185,7 +186,7 @@ a a.active,a:hover {
     margin-bottom: 15%;
     font-size: 39px;
     margin-top: 200px;
-    padding-top: 62px;
+    padding-top: 35px;
 }
 #home .wrapper #center p {
     margin-top: -202px;
@@ -300,7 +301,6 @@ a a.active,a:hover {
  #home .wrapper footer { 
     padding: 16px 70px;
     height: 20vh;
-    background-color:  azure;
  }
  
  #home .wrapper footer .wrapper { 
@@ -358,6 +358,9 @@ a a.active,a:hover {
     }
  }
 @media all and (max-width: 1080px) {
+    #home .wrapper #navbar .bottom ul {
+        margin-left: 3%;
+    }
     #home .wrapper #center  {
         margin-top: 279px;
     }
@@ -369,13 +372,66 @@ a a.active,a:hover {
     }
 
 }
+@media (max-width: 981px) {
+    .checkbtn{
+        display: block;
+      }
+      ul{
+        position: fixed;
+        width: 22%;
+        height: 100vh;
+        background:#fff;
+        top: 80px;
+        left: -278%;
+        text-align: center;
+        transition: all .5s;   
+        flex-direction: column;
+      }
+      nav ul li{
+        display: block;
+        margin: 0;
+        line-height: 30px;
+      }
+}
 @media all and (max-width: 980px) {
+    /* #home .wrapper #navbar .bottom ul {
+        margin-left: 0%;
+    } */
     #home .wrapper #center {
         margin-top: 276px;
     }
     #home .wrapper #center p {
         margin-top: -145px;
     }
+    .checkbtn{
+        display: block;
+      }
+      ul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+      }
+      nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      a:hover,a.active{
+        background: none;
+        color: #0082e6;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
 }
 @media all and (max-width: 768px) {
     #home .wrapper #navbar .middle input {
@@ -421,25 +477,8 @@ a a.active,a:hover {
         margin-right: 365px;
     }
 }
-@media (max-width: 1239px) {
-    .checkbtn{
-        display: block;
-      }
-      ul{
-        position: fixed;
-        width: 22%;
-        height: 100vh;
-        background:#fff;
-        top: 80px;
-        left: -278%;
-        text-align: center;
-        transition: all .5s;   
-        flex-direction: column;
-      }
-      nav ul li{
-        display: block;
-        margin: 0;
-        line-height: 30px;
-      }
-
+@media all and (max-width: 360px){
+    #home .wrapper #center p {
+        margin-top: -67px;
+} 
 }
