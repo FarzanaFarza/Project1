@@ -3,13 +3,67 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "poppins";
 }
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('../fonts/poppins-bold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-bold-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppins-regular';
+    src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppins-italic';
+    src: url('../fonts/poppins-italic-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-italic-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppins-light';
+    src: url('../fonts/poppins-light-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-light-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
-    font-family: "poppins";
+    font-family: "poppins-light";
+    width: 100%;
 }
-.wrapper 
-{
+a {
+    font-family: "poppins-regular";
+}
+p {
+    font-family: "poppins-regular";
+}
+h1 {
+    font-family: "poppins-bold";
+}
+.wrapper {
 
 }
 #home {
@@ -18,60 +72,61 @@ body {
 #home .wrapper {
 
 }
-#home .wrapper header {
+#home .wrapper header .wrapper{
     padding: 4px 18px;
-
 }
-#home .wrapper header header.top {
+#home .wrapper header .wrapper header.top {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#home .wrapper header header.top .left {
+#home .wrapper header .wrapper header.top .left {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
-#home .wrapper header header.top .left .one {
+#home .wrapper header .wrapper header.top .left .one {
 
 }
-#home .wrapper header header.top .left .one a img {
+#home .wrapper header .wrapper header.top .left .one a i {
     display: block;
     width: 100%;
 }
-#home .wrapper header header.top .left a {
+#home .wrapper header .wrapper header.top .left a {
     color: #000;
 }
-#home .wrapper header header.top .left .two {
+#home .wrapper header .wrapper header.top .left .two {
 
 }
-#home .wrapper header header.top .left .two a img {
+#home .wrapper header .wrapper header.top .left .two a i {
     display: block;
     width: 100%;
 }
-#home .wrapper header header.middle {
+#home .wrapper header .wrapper header.middle {
     display: flex;
     justify-content: space-between;
     line-height: 10vh;
 }
-#home .wrapper header header.middle .left {
+#home .wrapper header .wrapper header.middle .left {
 
 }
-#home .wrapper header header.middle .left h1 a {
+#home .wrapper header .wrapper header.middle .left h1 a {
     color: #000;
     font-size: 55px;
+    font-family: "oppins-bold";
 }
-#home .wrapper header header.middle .middle {
+#home .wrapper header .wrapper header.middle .middle {
     width: 35%;
     position: relative;
 }
-#home .wrapper header header.middle .middle i {
+#home .wrapper header .wrapper header.middle .middle a i {
     position: absolute;
-    padding-top: 30px;
+    top: 30px;
     padding-left: 15px;
     color: #66686b;
 }
-#home .wrapper header header.middle .middle input {
+#home .wrapper header .wrapper header.middle .middle input {
     display: inline-block;
     width: 115%;
     height: 40px;
@@ -82,21 +137,20 @@ body {
     outline: none;
     padding-left: 40px; 
 }
-#home .wrapper header header.middle .right {
+#home .wrapper header .wrapper header.middle .right {
     width: 23%;
 }
-#home .wrapper header header.middle .right ul {
+#home .wrapper header .wrapper header.middle .right .destination {
     list-style: none;
     display: flex;
     align-items: center;
     float: right;
-    gap: 2px;
+    gap: 20px;
 }
-#home .wrapper header header.middle .right ul li a img {
-    display: block;
-    width: 100%;
+#home .wrapper header .wrapper header.middle .right .destination li a i {
+    color: black;
 }
-#home .wrapper header header.bottom {
+#home .wrapper header .wrapper header.bottom {
     
 }
 a.active,a:hover {
@@ -109,13 +163,13 @@ a.active,a:hover {
 #check{
     display: none;
 }
-#home .wrapper header header.bottom ul {
+#home .wrapper header .wrapper header.bottom ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 40px;
 }
-#home .wrapper header header.bottom ul li a {
+#home .wrapper header .wrapper header.bottom ul li a {
     color: #000;
 }
 #home .wrapper #spotlight {
@@ -134,16 +188,16 @@ a.active,a:hover {
     width: 40%;
     padding-left: 63px;
 }
-#home .wrapper #spotlight .container .common h1{
+#home .wrapper #spotlight .wrapper .container .common h1{
     font-weight: bold;
     font-size: 35px;
     padding-bottom: 20px;
 }
-#home .wrapper #spotlight .container .common p{
+#home .wrapper #spotlight .wrapper .container .common p{
     padding-bottom: 40px;
     font-size: 20px;
 }
-#home .wrapper #spotlight .container .common button{
+#home .wrapper #spotlight .wrapper .container .common button{
     border: 1px solid #000;
     background: #000;
     color: #fff;
@@ -152,7 +206,7 @@ a.active,a:hover {
 #home .wrapper #content {
     background-color: #ebedeb;
 }
-#home .wrapper #content .heading {
+#home .wrapper #content  .heading {
     text-align: center;
     padding: 65px;
 }
@@ -258,25 +312,25 @@ a.active,a:hover {
 #home .wrapper footer {
  
 }
-#home .wrapper footer .footercontainer {
+#home .wrapper footer .wrapper .footercontainer {
     padding: 50px;
 }
-#home .wrapper footer .footercontainer .left {
+#home .wrapper footer .wrapper .footercontainer .left {
 
 }
-#home .wrapper footer .footercontainer .left p {
+#home .wrapper footer .wrapper .footercontainer .left p {
 
 }
-#home .wrapper footer .footercontainer .right {
+#home .wrapper footer .wrapper .footercontainer .right {
     
 }
-#home .wrapper footer .footercontainer .right ul.last{
+#home .wrapper footer .wrapper .footercontainer .right .footer-social-icons{
     list-style: none;
     display: flex;
     float: right;
     gap: 70px;
 }
-#home .wrapper footer .footercontainer .right ul.last li a {
+#home .wrapper footer .wrapper .footercontainer .right .footer-social-icons li a.social-icon-visible {
     color: black;
 }
 @media all and (max-width: 980px) {
@@ -285,12 +339,11 @@ a.active,a:hover {
         font-size: 24px;
         cursor: pointer;
       }
-      ul{
+      .bottom ul{
         position: fixed;
         width: 50%;
-        height: 150vh;
         background: #fff;
-        top: 48px;
+        top: 180px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -298,11 +351,11 @@ a.active,a:hover {
         flex-direction: column;
         line-height: normal;
       }
-        ul li{
+      .bottom  ul li{
         margin: 2px 0;
         line-height: 30px;
       }
-       ul li a{
+      .bottom ul li a{
         font-size: 20px;
       }
       a:hover,a.active{
@@ -313,95 +366,124 @@ a.active,a:hover {
         left: 0;
       }
 }
-@media all and (max-width: 1440px) {
-    #home .wrapper header header.middle .middle i {
-        padding-top: 16px;
-        color: #66686b;
+@media screen and (max-width: 1440px) {
+    #home .wrapper header .wrapper header.middle{
+        line-height: 19vh;
     }
-} 
-@media all and (min-width: 980px) and ( max-width: 1080px) {
-    #home .wrapper #spotlight .container .common {
-        width: 44%;
+    #home .wrapper header .wrapper header.middle .middle a i {
+        top: 25px;
     }
 }
-@media all and ( max-width: 980px) {
-    #home .wrapper #spotlight .container .common {
-        width: 55%;
+@media screen and (max-width: 1281px){
+    #home .wrapper header .wrapper header.middle{
+        line-height: 19vh;
     }
-    #home .wrapper header header.middle .middle i {
-        padding-left: 20px;
+    #home .wrapper header .wrapper header.middle .middle a i {
+        top: 25px;
     }
 }
-@media all and ( max-width: 768px) {
-    #home .wrapper #spotlight .container .common {
-        width: 66%;
+@media screen and (max-width: 1081px) {
+    #home .wrapper #spotlight .wrapper .container .common h1 {
+        width: 112%;
+    }
+}
+@media screen and (max-width: 981px) {
+    #home .wrapper #spotlight .wrapper .container .common h1 {
+        width: 112%;
+    }
+    #home .wrapper #spotlight .wrapper .container .common p {
+        font-size: 19px;
+        width: 120%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #home .wrapper #spotlight .wrapper .container .common h1 {
+        width: 156%;
+    }
+    #home .wrapper #spotlight .wrapper .container .common p {
+        width: 175%;
     }
     #home .wrapper #about .wrapper .shopping {
         flex-direction: column;
     }
-    #home .wrapper #about .wrapper .shopping .left {
-        padding-left: 0px;
-    }
     #home .wrapper #about .wrapper .shopping .middle {
-        padding-left: 0px;
+        padding-left: 1px;
     }
     #home .wrapper #about .wrapper .shopping .right {
-        padding-left: 0px;
+        padding-left: 1px;
+    }
+    #home .wrapper header .wrapper header.middle{
+        line-height: 24vh;
+    }
+    #home .wrapper #content .heading h1 {
+        font-size: 46px;
     }
 }
-@media all and ( max-width: 640px) {
-    #home .wrapper #spotlight .container .common {
-        width: 78%;
+@media screen and (max-width: 641px) {
+    #home .wrapper #spotlight .wrapper .container .common h1 {
+        width: 186%;
     }
-    #home .wrapper header header.top {
-        font-size: 15px;
+    #home .wrapper #spotlight .wrapper .container .common p {
+        width: 170%;
     }
-    #home .wrapper #about .wrapper .title h1 {
-        font-size: 49px;
+    #home .wrapper #content .heading h1 {
+        font-size: 42px;
+    }
+    #home .wrapper header .wrapper header.middle .middle input {
+        display: none;
+    }
+    #home .wrapper footer .wrapper .footercontainer .right {
+        padding-top: 26px;
+    }
+    #home .wrapper header .wrapper header.middle .middle a i {
+        top: 32px;
+    }
+    #home .wrapper header .wrapper header.top {
+        font-size: 14px;
+    }
+    #home .wrapper header .wrapper header.middle .right .destination {
+        display: none;
+    }
+} 
+@media screen and (max-width: 541px) {
+    #home .wrapper header .wrapper header.top {
+        font-size: 13px;
+    }
+    #home .wrapper #spotlight .wrapper .container .common h1 {
+        font-size: 27px;
+    }
+    #home .wrapper #spotlight .wrapper .container .common p {
+       font-size: 15px;
     }
     #home .wrapper #content .heading h1 {
         font-size: 34px;
-    } 
-    #home .wrapper header header.middle .middle input {
-        display: none;
-        align-items: center;
     }
-}
-@media all and ( max-width: 540px) {
-    #home .wrapper header header.top {
-        font-size: 13px;
-    }
-    #home .wrapper #about .wrapper .shopping {
-        flex-direction: column;
-    }
-    #home .wrapper #about .wrapper .shopping .left {
-        padding-left: 0px;
-    }
-    #home .wrapper #about .wrapper .shopping .middle {
-        padding-left: 0px;
-    }
-    #home .wrapper #about .wrapper .shopping .right {
-        padding-left: 0px;
-    }
-    #home .wrapper header header.middle .middle i {
-        padding-left: 10px;
-    }
-}
-@media all and ( max-width: 480px) {
     #home .wrapper #about .wrapper .title h1 {
-        font-size: 41px;
+        font-size: 49px;
+    }
+    
+}
+@media screen and (max-width: 481px){
+    #home .wrapper header .wrapper header.top .left{
+        gap: 7px;
+    }
+    #home .wrapper #spotlight .wrapper .container .common h1 {
+        width: 225%;
+    }
+    #home .wrapper #spotlight .wrapper .container .common p {
+       width: 200%;
     }
     #home .wrapper #content .heading h1 {
         font-size: 29px;
-    } 
-    #home .wrapper #spotlight .container .common {
-        width: 89%;
     }
-    #home .wrapper header header.top {
-        font-size: 11px;
+    #home .wrapper #about .wrapper .title h1 {
+        font-size: 41px;
     }
-    #home .wrapper header header.middle .left h1 a {
-        font-size: 49px;
+    #home .wrapper #content .heading p{
+        font-size: 16px;
+    }
+    #home .wrapper footer .wrapper .footercontainer .right .footer-social-icons {
+        gap: 60px;
     }
 }
 
