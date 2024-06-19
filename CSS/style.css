@@ -79,12 +79,13 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 14px;
 }
 #home .wrapper header .wrapper header.top .left {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 11px;
 }
 #home .wrapper header .wrapper header.top .left .one {
 
@@ -107,6 +108,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     line-height: 10vh;
+    gap: 33px;
 }
 #home .wrapper header .wrapper header.middle .left {
 
@@ -125,6 +127,7 @@ h1 {
     top: 30px;
     padding-left: 15px;
     color: #66686b;
+    top: 0 15px;
 }
 #home .wrapper header .wrapper header.middle .middle input {
     display: inline-block;
@@ -195,7 +198,7 @@ a.active,a:hover {
 }
 #home .wrapper #spotlight .wrapper .container .common p{
     padding-bottom: 40px;
-    font-size: 20px;
+    font-size: 18px;
 }
 #home .wrapper #spotlight .wrapper .container .common button{
     border: 1px solid #000;
@@ -211,7 +214,7 @@ a.active,a:hover {
     padding: 65px;
 }
 #home .wrapper #content .heading h1 {
-    font-size: 50px;
+    font-size: 45px;
 }
 #home .wrapper #content .paragraph {
 
@@ -240,7 +243,7 @@ a.active,a:hover {
     padding: 25px;
 }
 #home .wrapper #about .wrapper .shopping .left {
-    padding-left: 2px;
+    margin-left: 2px;
 }
 #home .wrapper #about .wrapper .shopping .left .item {
     width: 100%;
@@ -260,7 +263,7 @@ a.active,a:hover {
     color: black;
 }
 #home .wrapper #about .wrapper .shopping .middle {
-    padding-left: 60px;
+    margin-left: 60px;
 }
 #home .wrapper #about .wrapper .shopping .middle .item1 {
     width: 100%;
@@ -280,11 +283,11 @@ a.active,a:hover {
     color: black;
 }
 #home .wrapper #about .wrapper .shopping .right {
-    padding-left: 60px;
+    margin-left: 60px;
 }
 #home .wrapper #about .wrapper .shopping .right .item2 {
     width: 100%;
-    padding-right: 0px;
+    margin-right: 0px;
 }
 #home .wrapper #about .wrapper .shopping .right .item2 img {
     display: block;
@@ -373,6 +376,11 @@ a.active,a:hover {
     #home .wrapper header .wrapper header.middle .middle a i {
         top: 25px;
     }
+    #home .wrapper #content .paragraph p {
+        font-size: 16px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }
 @media screen and (max-width: 1281px){
     #home .wrapper header .wrapper header.middle{
@@ -386,48 +394,59 @@ a.active,a:hover {
     #home .wrapper #spotlight .wrapper .container .common h1 {
         width: 112%;
     }
+    #home .wrapper #spotlight .wrapper .container .common p {
+        width: 175%;
+    }
 }
 @media screen and (max-width: 981px) {
     #home .wrapper #spotlight .wrapper .container .common h1 {
-        width: 112%;
+        width: 149%;
     }
     #home .wrapper #spotlight .wrapper .container .common p {
         font-size: 19px;
         width: 120%;
     }
+    #home .wrapper footer .wrapper .footercontainer .right .footer-social-icons {
+        margin-top: 20px;
+        gap: 60px;
+    }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     #home .wrapper #spotlight .wrapper .container .common h1 {
-        width: 156%;
+        width: 178%;
     }
     #home .wrapper #spotlight .wrapper .container .common p {
-        width: 175%;
+        width: 189%;
+    }
+    #home .wrapper #content .heading h1 {
+        font-size: 38px;
+    }
+    #home .wrapper #content .paragraph p {
+        margin-left: 25px;
+        margin-right: 25px;
     }
     #home .wrapper #about .wrapper .shopping {
         flex-direction: column;
     }
     #home .wrapper #about .wrapper .shopping .middle {
-        padding-left: 1px;
+        margin-left: 3px;
+        margin-top: 15px;
     }
     #home .wrapper #about .wrapper .shopping .right {
-        padding-left: 1px;
-    }
-    #home .wrapper header .wrapper header.middle{
-        line-height: 24vh;
-    }
-    #home .wrapper #content .heading h1 {
-        font-size: 46px;
+        margin-left: 3px;
+        margin-top: 15px;
     }
 }
 @media screen and (max-width: 641px) {
     #home .wrapper #spotlight .wrapper .container .common h1 {
-        width: 186%;
+        width: 179%;
+        font-size: 27px;
     }
     #home .wrapper #spotlight .wrapper .container .common p {
-        width: 170%;
+        width: 209%;
     }
     #home .wrapper #content .heading h1 {
-        font-size: 42px;
+        font-size: 30px;
     }
     #home .wrapper header .wrapper header.middle .middle input {
         display: none;
@@ -436,55 +455,73 @@ a.active,a:hover {
         padding-top: 26px;
     }
     #home .wrapper header .wrapper header.middle .middle a i {
-        top: 32px;
+        top: 36px;
     }
     #home .wrapper header .wrapper header.top {
-        font-size: 14px;
+        font-size: 12px;
     }
     #home .wrapper header .wrapper header.middle .right .destination {
         display: none;
     }
+    #home .wrapper #about .wrapper .title h1 {
+        font-size: 43px;
+    }
 } 
 @media screen and (max-width: 541px) {
     #home .wrapper header .wrapper header.top {
-        font-size: 13px;
+        font-size: 11px;
     }
     #home .wrapper #spotlight .wrapper .container .common h1 {
-        font-size: 27px;
+        font-size: 28px;
+        width: 212%;
     }
     #home .wrapper #spotlight .wrapper .container .common p {
        font-size: 15px;
     }
     #home .wrapper #content .heading h1 {
-        font-size: 34px;
+        font-size: 25px;
     }
     #home .wrapper #about .wrapper .title h1 {
-        font-size: 49px;
+        font-size: 36px;
     }
-    
 }
-@media screen and (max-width: 481px){
+@media screen and (max-width: 481px){ 
+    #home .wrapper header .wrapper header.top {
+        gap: 3px;
+        font-size: 7px;
+    }
     #home .wrapper header .wrapper header.top .left{
         gap: 7px;
     }
     #home .wrapper #spotlight .wrapper .container .common h1 {
-        width: 225%;
+        font-size: 20px;
+        width: 247%;
     }
     #home .wrapper #spotlight .wrapper .container .common p {
-       width: 200%;
+       font-size: 12px;
+       width: 320%;
     }
     #home .wrapper #content .heading h1 {
-        font-size: 29px;
+        font-size: 16px;
     }
-    #home .wrapper #about .wrapper .title h1 {
-        font-size: 41px;
+    #home .wrapper #content .paragraph p {
+        font-size: 10px;
     }
     #home .wrapper #content .heading p{
         font-size: 16px;
     }
     #home .wrapper footer .wrapper .footercontainer .right .footer-social-icons {
-        gap: 60px;
+        gap: 36px;
     }
+    #home .wrapper #about .wrapper .title h1 {
+        font-size: 23px;
+    }
+    #home .wrapper header .wrapper header.middle .middle a i {
+        display: none;
+    }
+}
+@media screen and (max-width: 361px){
+   
 }
 
 
