@@ -64,7 +64,7 @@ h1 {
     font-family: "poppins-bold";
 }
 .wrapper {
-
+    
 }
 #home {
     overflow: hidden;
@@ -73,7 +73,7 @@ h1 {
 
 }
 #home .wrapper header .wrapper{
-    padding: 4px 18px;
+    padding: 20px 25px;
 }
 #home .wrapper header .wrapper header.top {
     display: flex;
@@ -109,6 +109,7 @@ h1 {
     justify-content: space-between;
     line-height: 10vh;
     gap: 33px;
+    padding-top: 15px;
 }
 #home .wrapper header .wrapper header.middle .left {
 
@@ -154,7 +155,7 @@ h1 {
     color: black;
 }
 #home .wrapper header .wrapper header.bottom {
-    
+    padding-top: 15px;
 }
 a.active,a:hover {
     background: #fff;
@@ -208,6 +209,7 @@ a.active,a:hover {
 }
 #home .wrapper #content {
     background-color: #ebedeb;
+    padding: 20px 35px;
 }
 #home .wrapper #content  .heading {
     text-align: center;
@@ -369,6 +371,11 @@ a.active,a:hover {
         left: 0;
       }
 }
+@media screen and (max-width: 1496px) {
+    #home .wrapper header .wrapper header.middle .middle a i {
+        top: 20px;
+    }
+}
 @media screen and (max-width: 1440px) {
     #home .wrapper header .wrapper header.middle{
         line-height: 19vh;
@@ -387,7 +394,7 @@ a.active,a:hover {
         line-height: 19vh;
     }
     #home .wrapper header .wrapper header.middle .middle a i {
-        top: 25px;
+        top: 30px;
     }
 }
 @media screen and (max-width: 1081px) {
@@ -410,6 +417,9 @@ a.active,a:hover {
         margin-top: 20px;
         gap: 60px;
     }
+    #home .wrapper #content .heading h1 {
+        font-size: 32px;
+    }
 }
 @media screen and (max-width: 769px) {
     #home .wrapper #spotlight .wrapper .container .common h1 {
@@ -419,7 +429,7 @@ a.active,a:hover {
         width: 189%;
     }
     #home .wrapper #content .heading h1 {
-        font-size: 38px;
+        font-size: 32px;
     }
     #home .wrapper #content .paragraph p {
         margin-left: 25px;
@@ -446,7 +456,7 @@ a.active,a:hover {
         width: 209%;
     }
     #home .wrapper #content .heading h1 {
-        font-size: 30px;
+        font-size: 26px;
     }
     #home .wrapper header .wrapper header.middle .middle input {
         display: none;
@@ -479,7 +489,7 @@ a.active,a:hover {
        font-size: 15px;
     }
     #home .wrapper #content .heading h1 {
-        font-size: 25px;
+        font-size: 21px;
     }
     #home .wrapper #about .wrapper .title h1 {
         font-size: 36px;
@@ -488,7 +498,7 @@ a.active,a:hover {
 @media screen and (max-width: 481px){ 
     #home .wrapper header .wrapper header.top {
         gap: 3px;
-        font-size: 7px;
+        font-size: 8px;
     }
     #home .wrapper header .wrapper header.top .left{
         gap: 7px;
@@ -502,7 +512,7 @@ a.active,a:hover {
        width: 320%;
     }
     #home .wrapper #content .heading h1 {
-        font-size: 16px;
+        font-size: 14px;
     }
     #home .wrapper #content .paragraph p {
         font-size: 10px;
